@@ -12,6 +12,10 @@ Quelle est la quantité de mémoire cache L2 et L3 de votre machine ?
 L2 : 1,0 Mo
 L3 : 6,0 Mo
 
-Ex1 : Parallélisation
+Ex1 : Parallélisation de l'automate cellulaire
 
 1. Pour faire la parallélisation, j'ai attribué à l'aide du modulo, un calcule d'un résultat à chacun des process. Comme ce sont à chaque fois des caculs qui se font indépendamment, une telle parallélisation ne requiert aucune communication entre les process. Pour évaluer le speed up d'une telle parallélisation, j'ai ajouté une variable qui calcul le temps d'exécution du process 0. En effet, j'ai également caculé le temps total passé au calcul et à l'affichage mais celui ci ne reflète pas la réalité car les calculs se font en parallèle !
+
+Ex2 : Enveloppe convexe
+
+1.Pour ce faire on découpe le nombre de points en 2 et on calcul l enveloppe sur chaque set de points puis on gather les 2 enveloppes calculées pour recalculer une autre fois l enveloppe de ces deux enveloppes, ce qui donne le résultat final.
